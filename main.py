@@ -11,8 +11,8 @@ app = FastAPI()
 # It automatically looks for the OPENAI_API_KEY environment variable
 cleint = OpenAI()
 
-class ChatREquest(BaseModel):
-message: str
+class ChatRequest(BaseModel):
+    message: str
 
 #1. THE FRONTEND UI
 @app.get("/", response_class=HTMLResponse)
